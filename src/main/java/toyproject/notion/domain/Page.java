@@ -18,6 +18,7 @@ public class Page {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
+    @Column(name = "page_id")
     private Long id;
 
     @Column(nullable = false)

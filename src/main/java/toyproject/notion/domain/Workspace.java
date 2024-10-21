@@ -18,6 +18,7 @@ public class Workspace {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
+    @Column(name = "workspace_id")
     private Long id;
 
     @Column(nullable = false)
