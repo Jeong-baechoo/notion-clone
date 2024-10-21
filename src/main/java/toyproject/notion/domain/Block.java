@@ -19,6 +19,7 @@ public class Block {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
+    @Column(name = "block_id")
     private Long id;
 
     @Column(nullable = false)
